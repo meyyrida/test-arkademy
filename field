@@ -1,0 +1,29 @@
+function isAcceptedUsername(username) {
+    var Regex = /^[A-Z]{7}$/;
+    return Regex.test(username) ;
+}
+if (isAcceptedUsername("SABRINA")) {
+    alert("true") ;
+} else {
+    alert("false") ;
+}
+if (isAcceptedUsername("RAISA")) {
+    alert("true") ;
+} else {
+    alert("false") ;
+}
+
+function isAcceptedPassword(password) {
+    var Regex = /^#[a-zA-Z0-9]{9-15}$/;
+    return Regex.test(password) ;
+}
+if (isAcceptedUsername("#DiamdiRumah")) {
+    alert("true") ;
+} else {
+    alert("false") ;
+}
+if (isAcceptedUsername("Stay#")) {
+    alert("true") ;
+} else {
+    alert("false") ;
+}
